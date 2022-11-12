@@ -5,21 +5,20 @@ using static DebugConsoleManager;
 
 public class DebugConsoleTest : MonoBehaviour
 {
-    public DebugConsoleManager debugConsoleManager;
     public void ErrorDebugMessage(string Message)
     {
-        debugConsoleManager.DebugMessage(DebugState.Error, Message);
+        Logger.Instance.LogError(Message);
     }
     public void WarningDebugMessage(string Message)
     {
-        debugConsoleManager.DebugMessage(DebugState.Warning, Message);
+        Logger.Instance.LogWarning(Message);
     }
     public void InfoDebugMessage(string Message)
     {
-        debugConsoleManager.DebugMessage(DebugState.Info, Message);
+        Logger.Instance.LogInfo(Message);
     }
     public void SuccessDebugMessage(string Message)
     {
-        debugConsoleManager.DebugMessage(DebugState.Success, Message);
+        Logger.Instance.LogSuccess(Message);
     }
 }

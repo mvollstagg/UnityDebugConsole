@@ -13,7 +13,7 @@ public class DebugConsoleItem : MonoBehaviour
     private Color BackgroundColor;
     [SerializeField]
     private Sprite Icon;
-    private string Message;
+    public string Message;
     [SerializeField]
     private Image SpriteObject;
     [SerializeField]

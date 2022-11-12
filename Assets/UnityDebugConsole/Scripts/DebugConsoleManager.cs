@@ -7,8 +7,9 @@ using UnityEngine.UI;
 using TMPro;
 using StarterAssets;
 using UnityEngine.InputSystem;
+using DilmerGames.Core.Singletons;
 
-public class DebugConsoleManager : MonoBehaviour
+public class DebugConsoleManager : Singleton<DebugConsoleManager>
 {
     public enum DebugState
     {
@@ -25,7 +26,7 @@ public class DebugConsoleManager : MonoBehaviour
     [SerializeField]
     private ScrollRect myScrollRect;
 
-    public void DebugMessage(DebugState debugState, string message)
+    public void SendDebugMessage(DebugState debugState, string message)
     {
         var DebugConsolePrefab = DebugConsoleItems.FirstOrDefault(x => x.name.Contains(debugState.ToString()));
         GameObject debugConsoleObject = Instantiate(DebugConsolePrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
@@ -36,7 +37,7 @@ public class DebugConsoleManager : MonoBehaviour
 
     void Update() 
     {        
-        if(Keyboard.current.f1Key.wasPressedThisFrame)
+        if(Keyboard.current.f11Key.wasPressedThisFrame)
         {
             consoleStatus = !consoleStatus;
             DebugConsoleGameObject.transform.root.gameObject.SetActive(consoleStatus);

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7774649248531969691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7774649248531969689}
+  - component: {fileID: 7774649248531969688}
+  - component: {fileID: 7774649248531969694}
+  m_Layer: 0
+  m_Name: DebugConsoleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7774649248531969689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774649248531969691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7774649248531969688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774649248531969691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba88ccf03a09244095a7d463058e030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DebugConsoleItems:
+  - {fileID: 8695422065435486840, guid: 52e585fb16d85784590149cae8f69e8f, type: 3}
+  - {fileID: 8695422065435486840, guid: 63b24ba039f273244a5fd4ab79566353, type: 3}
+  - {fileID: 8695422065435486840, guid: 24afd6398b2ab2745a063b137c52f91d, type: 3}
+  - {fileID: 8695422065435486840, guid: e06cf8675f6d084459475e625f06b37b, type: 3}
+  DebugConsoleGameObject: {fileID: 0}
+  myScrollRect: {fileID: 0}
+--- !u!114 &7774649248531969694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774649248531969691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd07ca24c6093724da00f1f119d1a52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugConsoleManager: {fileID: 0}
+  enableDebug: 1
